@@ -1,17 +1,31 @@
+﻿# Python
 .venv/
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Secrets
 .env
-data/
-models/
+
+# Données et modèles lourds A LA RACINE uniquement (gérés par DVC)
+/data/
+/models/
+
+# MLflow
 mlruns/
-mlartifacts/
+mlflow.db*
+
+# Rapports générés
 reports/figures/*.png
 monitoring/*.html
 monitoring/*.csv
+
+# DVC cache
 .dvc/cache/
+
+# Système
 .DS_Store
 Thumbs.db
+
+# VS Code
 .vscode/
-mlflow.db*
