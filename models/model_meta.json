@@ -1,0 +1,18 @@
+{
+  "classes": [
+    "Corn___Common_rust",
+    "Corn___healthy",
+    "Potato___Early_blight",
+    "Potato___Late_blight",
+    "Potato___healthy",
+    "Tomato___Early_blight",
+    "Tomato___Late_blight",
+    "Tomato___Leaf_Mold",
+    "Tomato___Septoria_leaf_spot",
+    "Tomato___healthy"
+  ],
+  "backbone": "mobilenet_v3_large",
+  "image_size": 224,
+  "val_f1": 0.9844781638528506,
+  "mlflow_run_id": "28f0b8004a1c4e58a21afa07bcc821f8"
+}
