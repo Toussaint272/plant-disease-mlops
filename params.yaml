@@ -1,0 +1,35 @@
+﻿data:
+  image_size: 224
+  val_split: 0.15
+  seed: 42
+  classes:
+    - Tomato___healthy
+    - Tomato___Early_blight
+    - Tomato___Late_blight
+    - Tomato___Leaf_Mold
+    - Tomato___Septoria_leaf_spot
+    - Potato___healthy
+    - Potato___Early_blight
+    - Potato___Late_blight
+    - Corn___healthy
+    - Corn___Common_rust
+
+train:
+  backbone: mobilenet_v3_large
+  pretrained: true
+  epochs: 3
+  batch_size: 32
+  lr: 0.001
+  weight_decay: 0.0001
+  freeze_backbone_epochs: 1
+
+augmentation:
+  hflip: 0.5
+  vflip: 0.2
+  rotation: 25
+  color_jitter: 0.3
+  random_resized_crop_scale: [0.7, 1.0]
+  gaussian_blur_p: 0.2
+
+evaluate:
+  drift_alert_threshold: 0.15
