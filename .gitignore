@@ -7,9 +7,12 @@ __pycache__/
 # Secrets
 .env
 
-# Données et modèles lourds A LA RACINE uniquement (gérés par DVC)
+# Données (ignorer tout le dossier data)
 /data/
-/models/
+
+# Modèles : ignorer les fichiers lourds, mais garder les fichiers .dvc
+/models/*.pt
+/models/*.json
 
 # MLflow
 mlruns/
